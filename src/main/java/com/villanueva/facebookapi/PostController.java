@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/posts")
-@CrossOrigin(origins = "http://localhost:5173") // allow Vite dev server during development
+@CrossOrigin(origins = {"http://localhost:5173", "https://facebookui-em20.onrender.com"})
 public class PostController {
 
     private final PostRepository postRepository;
